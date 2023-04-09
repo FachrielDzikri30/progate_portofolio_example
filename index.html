@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <section id="header-left">NINJA KEN</section>
+        <section id="header-right">
+            <a href="#">Tentang Saya</a>
+            <a href="#">Proyek Contoh</a>
+            <a href="#">Hubungi Saya</a>
+        </section>
+    </header>
+    <section id="container-top">
+        <h1>NINJA KEN<span>.</span></h1>
+        <h2>MY PORTOFOLIO</h2>
+        <img src="img/Ninja Ken.png">
+    </section>
+    <section id="container-aboutme">
+        <h1>Tentang Saya</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+    <section id="container-project">
+        <h1>Proyek Contoh</h1>
+        <section id="projectImg">
+            <div class="image fade">
+                <img id="img1" src="img/1.png">
+                <p class="mainImgP">Image 1</p>
+                <div id="popUp1">
+                    <div id="popUp1Content">
+                        <span id="closePopUp1">&times;</span>
+                        <img class="modalImg" src="img/1.png">
+                        <p class="modalP">Proyek ini adalah proyek pembuatan website untuk studi kasus.....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image fade">
+                <img id="img2" src="img/2.png">
+                <p class="mainImgP">Image 2</p>
+                <div id="popUp2">
+                    <div id="popUp2Content">
+                        <span id="closePopUp2">&times;</span>
+                        <img class="modalImg" src="img/2.png">
+                        <p class="modalP">Proyek ini adalah proyek pembuatan website untuk studi kasus.....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image fade">
+                <img id="img3" src="img/3.png">
+                <p class="mainImgP">Image 3</p>
+                <div id="popUp3">
+                    <div id="popUp3Content">
+                        <span id="closePopUp3">&times;</span>
+                        <img class="modalImg" src="img/3.png">
+                        <p class="modalP">Proyek ini adalah proyek pembuatan website untuk studi kasus.....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image fade">
+                <img id="img4" src="img/4.png">
+                <p class="mainImgP">Image 4</p>
+                <div id="popUp4">
+                    <div id="popUp4Content">
+                        <span id="closePopUp4">&times;</span>
+                        <img class="modalImg" src="img/4.png">
+                        <p class="modalP">Proyek ini adalah proyek pembuatan website untuk studi kasus.....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image fade">
+                <img id="img5" src="img/5.png">
+                <p class="mainImgP">Image 5</p>
+                <div id="popUp5">
+                    <div id="popUp5Content">
+                        <span id="closePopUp5">&times;</span>
+                        <img class="modalImg" src="img/5.png">
+                        <p class="modalP">Proyek ini adalah proyek pembuatan website untuk studi kasus.....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image fade">
+                <img id="img6" src="img/6.png">
+                <p class="mainImgP">Image 6</p>
+                <div id="popUp6">
+                    <div id="popUp6Content">
+                        <span id="closePopUp6">&times;</span>
+                        <img class="modalImg" src="img/6.png">
+                        <p class="modalP">Proyek ini adalah proyek pembuatan website untuk studi kasus.....</p>
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+            <a class="next" onclick="updateSlide(1)">&#10095;</a>
+        </section>
+    </section>
+    <section id="container-contact">
+        <h1>Hubungi Saya</h1>
+        <section id="inputInfo">
+            <input id="inputEmail" type="text" placeholder="Email (Diperlukan)">
+            <textarea id="inputMessage" placeholder="Message (Diperlukan)"></textarea>
+            <button id="openModalButton">Kirim</button>
+            <div id="myModal">
+                <div id="modalContent">
+                    <span id="closeModalIcon">&times;</span>
+                    <h2>Terjadi Kesalahan!</h2>
+                    <p>Form Contact tidak boleh kosong!</p>
+                </div>
+            </div>   
+        </section>
+    </section>
+    <footer>
+        <section id="footer-left">NINJA KEN</section>
+        <section id="footer-right">
+            <button class="faq">F.A.Q</button>
+            <div class="panel">
+                <a class="link" href="#">Tentang Saya</a>
+                <a class="link"href="#">Proyek Contoh</a>
+                <a class="link"href="#">Hubungi Saya</a>
+            </div>
+        </section>
+    </footer>
+    <script src="scriptPorto.js">
+
+    </script>
+</body>
+</html>
