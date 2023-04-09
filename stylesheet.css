@@ -1,0 +1,360 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+header {
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 100%;
+}
+
+#header-left {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    padding: 15px;
+}
+
+#header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 19px;
+    gap: 30px;
+}
+
+#header-right a {
+    color: white;
+    text-decoration: none;
+}
+
+#header-right a:hover{
+    color: orange;
+}
+
+#container-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+    width: 100%;
+}
+
+#container-top h1 {
+    font-size: 90px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+#container-top span {
+    color: orange;
+}
+
+#container-top h2 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+#container-top img {
+    width: 300px;
+    height: 320px;
+}
+
+#container-aboutme {
+    background-color: rgb(213, 198, 198);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px;
+    width: 100%;
+}
+
+#container-aboutme h1 {
+    font-size:30px ;
+    padding-bottom: 20px;
+}
+
+#container-aboutme p {
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 160px;
+}
+
+#container-project {
+    padding: 60px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-project h1{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+#projectImg {
+    display: flex;
+    flex-direction: row;
+    max-width: 300px;
+}
+
+.image {
+    display: none;
+}
+
+#img1, #img2, #img3, #img4, #img5, #img6 {
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#popUp1, #popUp2, #popUp3, #popUp4, #popUp5, #popUp6 {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 4%;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#closePopUp1, #closePopUp2, #closePopUp3, #closePopUp4, #closePopUp5, #closePopUp6 {
+    color: #aaa;
+    float: right;
+    font-size: 20px;
+}
+
+#closePopUp1:hover, #closePopUp1:focus, 
+#closePopUp2:hover, #closePopUp2:focus, 
+#closePopUp3:hover, #closePopUp3:focus, 
+#closePopUp4:hover, #closePopUp4:focus, 
+#closePopUp5:hover, #closePopUp5:focus, 
+#closePopUp6:hover, #closePopUp6:focus {
+    color: #000;
+    cursor: pointer;
+} 
+
+#popUp1Content, #popUp2Content, #popUp3Content, 
+#popUp4Content, #popUp5Content, #popUp6Content {
+    text-align: center;
+    background-color: #fefefe;
+    margin: 0 auto;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.modalImg {
+    width: 500px;
+    height: 500px;
+    padding-bottom: 20px;
+}
+
+.prev,.next{
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    width: auto;
+    transition: 0.6s ease;
+    margin-top: 130px;
+}
+.prev {
+    left:600px;
+}
+.next {
+    right: 602px;
+}
+.prev:hover , .next:hover {
+    color: rgb(172, 167, 167);
+    background-color: black;
+}
+
+/* animasi */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* animasi */
+
+.mainImgP {
+    text-align: center;
+}
+
+#container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(213, 198, 198);
+    padding: 60px 0px 50px 0px;
+    width: 100%;
+}
+
+#container-contact h1 {
+    font-size: 30px;
+}
+
+#inputInfo {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#inputInfo input, textarea, button {
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+}
+
+#inputInfo input, textarea {
+    width: 500px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#inputInfo input {
+    height: 30px;
+}
+
+#inputInfo textarea {
+    height: 90px;
+}
+
+#openModalButton {
+    width: 300px;
+    background-color: yellow;
+    height: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#openModalButton:hover {
+    background-color: bisque;
+}
+
+#myModal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 15%;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+#closeModalIcon {
+    color: #aaa;
+    float: right;
+    font-size: 20px;
+}
+
+#closeModalIcon:hover, #closeModalIcon:focus {
+    color: #000;
+    cursor: pointer;
+}
+
+#modalContent {
+    text-align: center;
+    background-color: #fefefe;
+    margin: 0 auto;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#modalContent h2 {
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(102, 97, 97);
+    display: flex;
+    flex-direction: row;
+    gap: 65%;
+    color: white;
+    width: 100%;
+}
+
+#footer-left {
+    font-size: 40px;
+    padding: 15px;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+#footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 15px;
+    gap: 15px;
+}
+
+.faq {
+    text-align: center;
+    margin-top: 15px;
+    width: 145px;
+    height: 30px;
+    border-radius: 0px;
+    border: none;
+    background-color: rgb(102, 97, 97);
+    color: white;
+    font-weight: bold
+}
+
+.faq:hover {
+    color: orange;
+    background-color: grey;
+}
+
+.panel {
+    display: none;
+} 
+
+.link {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    color: orange;
+}
